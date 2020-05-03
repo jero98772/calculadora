@@ -1,0 +1,89 @@
+<DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora Web</title>  
+    <link rel="stylesheet" type="text/css" href="estilo.css">  
+    <script language="LiveScript">
+        function addChar(input, character)
+        {
+            if(input.value == null || input.value == "0")
+                input.value = character
+            else
+                input.value += character
+}
+        function deleteChar(input)
+        {
+            input.value = input.value.substring(0, input.value.length - 1)
+}
+        function changeSign(input)
+        {
+            if(input.value.substring(0, 1) == "-")
+                input.value = input.value.substring(1, input.value.length)
+            else
+                input.value = "-" + input.value
+}
+        function compute(form) 
+        {
+            form.display.value = eval(form.display.value)
+}
+        function square(form) 
+        {
+            form.display.value = eval(form.display.value) * eval(form.display.value)
+}
+        function checkNum(str) 
+        {
+            for (var i = 0; i < str.length; i++) {
+                var ch = str.substring(i, i+1)
+            if (ch < "0" || ch > "9") {
+                if (ch != "/" && ch != "*" && ch != "+" && ch != "-" && ch != "(" && ch!= ")") {
+                    alert("invalid entry!")
+                return false
+            }
+        }
+    }
+  return true
+}
+</script>
+</head>
+<body text="0000ff" background="https://scontent.feoh1-1.fna.fbcdn.net/v/t1.0-9/12316279_10207037413307749_8598620599472297374_n.jpg?oh=df4d30e55ae9d6f87ccbbc26b48b85fb&oe=5933FFCD">
+<center>
+	<br/>	<br/>	<br/>
+	<br/>	<br/>	<br/>
+	<h1><p>GRACIAS</p></h1>
+    <div class="contenedor">
+        <form>
+            <table>
+                <tr>
+                    <td colspan="4"><input class="text" name="display" id="campodetexto" type="text" value=""></td>
+                </tr>    
+                <tr>
+                    <td><input class="columna1" id="7" type="button" value="7" onClick="addChar(this.form.display, '7')"></td>
+                    <td><input class="columna1" id="8" type="button" value="8" onClick="addChar(this.form.display, '8')"></td>
+                    <td><input class="columna1" id="9" type="button" value="9" onClick="addChar(this.form.display, '9')"></td>
+                    <td><input class="columna2" id="suma" type="button" value="+" onClick="addChar(this.form.display, '+')"></td>
+                </tr>
+                <tr>
+                    <td><input class="columna1" id="4" type="button" value="4" onClick="addChar(this.form.display, '4')"></td>
+                    <td><input class="columna1" id="5" type="button" value="5" onClick="addChar(this.form.display, '5')"></td>
+                    <td><input class="columna1" id="6" type="button" value="6" onClick="addChar(this.form.display, '6')"></td>
+                    <td><input class="columna2" id="resta" type="button" value="-" onClick="addChar(this.form.display, '-')"></td>
+                </tr> 
+                <tr>
+                    <td><input class="columna1" id="1" type="button" value="1" onClick="addChar(this.form.display, '1')"></td>
+                    <td><input class="columna1" id="2" type="button" value="2" onClick="addChar(this.form.display, '2')"></td>
+                    <td><input class="columna1" id="3" type="button" value="3" onClick="addChar(this.form.display, '3')"></td>
+                    <td><input class="columna2" id="multiplicacion" type="button" value="*" onClick="addChar(this.form.display, '*')"></td>
+                </tr>  
+                <tr>
+                    <td><input class="columna1" id="clear" type="button" value="CE" onClick="this.form.display.value = 0 "></td>
+                    <td><input class="columna1" id="0" type="button" value="0" onClick="addChar(this.form.display, '0')"></td>
+                    <td><input class="columna1" id="equals" type="button" value="=" onClick="if (checkNum(this.form.display.value))
+                                                                                                      { compute(this.form) }"></td>
+                    <td><input class="columna2" id="division" type="button" value="/" onClick="addChar(this.form.display, '/')"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</center>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+<meta charset="utf-8">
+
+<script type="text/javascript">
+	function cacluladora() {
+	var ecuacion = document.getElementById('ecuacion').value;
+	var resultado = eval(String(ecuacion))
+	var out = String(ecuacion+"="+String(resultado))
+	document.getElementById('resultado').innerHTML = out
+	}
+</script>
+
+	<input type="text" name="calculadora" id="ecuacion">caculadora
+	<p id="resultado"> </p>
+	<input type="button" onclick ="cacluladora()" value="calcular">
+	</form>
+</html>
