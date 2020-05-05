@@ -7,12 +7,12 @@ donde e ido conosiendo python ,javascript, c/c++,R y algo muy importante la func
 
 # como funcionan
 
-#(hay 2 tipos)potenciado a la 3
-###1 (hay 2 tipos)
+# (hay 2 tipos)potenciado a la 3
+### 1 (hay 2 tipos)
 
 hay 2 tipos en python o javascript 
 
-###(hay 2 tipos)2x2 (vale por 2)
+### (hay 2 tipos)2x2 (vale por 2)
 en dedicadas y no dedicadas que tienen una funcion que les hace algo 
 ### dedicadas que muchas veces tienen botones
 
