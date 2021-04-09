@@ -26,3 +26,12 @@ en las no dedicadas  no hay funciones que tomen el valor de un operadors si no q
 ## contibuye con donaciones 
 	
 	- Bitcoin: bc1qf3eh6ssgzw2t3qyjk2gzwuskq4ctfk8375fg3r
+
+
+# notas 
+
+si no hay botones o un print con instruciones introdusca la operacion "textual" como:
+
+	13+14-15/16*17**(1/2)**5//6%2
+
+la respuesta es "= 27.0"

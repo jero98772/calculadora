@@ -11,6 +11,7 @@ es una calculadora fuera de ley y sin probar no va a funcionar ...
 * modulo o residuo con: %
 * division entera con: //
 * division decimal : /
+
 ### funciones
 * sqrt(num) : raiz cuadrada --> num^(1/2) 
 * root(x,e,root) : raiz de un numero x --> x^(p/root)
@@ -26,14 +27,17 @@ es una calculadora fuera de ley y sin probar no va a funcionar ...
 * gcd(a, b):aplica el maximo comun divisor
 * sumaM(a,b,mod) : suma modular --> (a+b)%mod
 * productoM(a,b,mod) : producto modular  --> (a*b)%mod 
-* poteciaM(base,a,mod): potencia modular --> (base**a)%mod
+* poteciaM(base,a,mod): potencia modular --> (base^a)%mod
 * inv(num): numero inverso --> 1/num
 * invM(a,mod) : inverso modular 
 * divisionM(a,b,mod) : division modular
 * raizCuadradaM(a,mod) : Raiz Cuadrada Modular --> (a²) % (mod²)
 * raizM(a,e,mod): raiz modular --> (a^e) % (mod^e)
 * cuadradosPerfectoM(a,mod) : cuadrados Perfectos Modular
+
+
 ### logicos 
+
 #### devuleve valores falsos o verdaderos
 * menor o igual que con: <=
 * mayor o igual que que con: >=
@@ -43,15 +47,22 @@ es una calculadora fuera de ley y sin probar no va a funcionar ...
 * y conyucion con: and
 * o disyuncion con: or
 * negacion con: not
+
+
 # numeros o numeracion que maneja
+
+
 ### constantes
 * e 2.71
 * pi 3.14
+
 ### numeraciones 
+
 * 0bnumero binario
 * 0xnumero hexadecimal
 * 0onumero octal
 * numero imaginaroj
+
 ### covesor a numeraciones
 * bin(numero) a binario
 * hex(numero) a hexadecimal
@@ -61,6 +72,7 @@ es una calculadora fuera de ley y sin probar no va a funcionar ...
 * degrees(numero) a un grado 
 * radians(numero) a un radian 
 * int(nuemro) a numeros enteros 
+
 ### ejemplos calculados 
 ecuacion1
 

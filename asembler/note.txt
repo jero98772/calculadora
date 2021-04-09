@@ -1,0 +1,4 @@
+nasm -f obj calc.asm -o calc.obj
+link calc.obj;
+
+(se uso en windows en su momentos)

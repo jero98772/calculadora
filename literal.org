@@ -1,0 +1,166 @@
+#+TITLE: se nesesitan calculadoras en python que calculen el infierno
+#+SUBTITLE: https://pastebin.com/GHbtE1BR
+#+AUTHOR: jero98772
+#+OPTIONS:    H:3 num:nil toc:nil
+#+INFOJS_OPT: view:t toc:t ltoc:t mouse:underline buttons:0y path:http://thomasf.github.io/solarized-css/org-info.min.js
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/lumen/bootstrap.min.css" />
+** tomado todo de 
+*** https://github.com/jero98772/calculadora
+*** https://github.com/jero98772/DsoonMath 
+**  con origen en 2015
+**  evolcuion con 
+*** https://github.com/jero98772/acua/blob/master/hw.py 
+** luego evoluciono mas
+***  https://github.com/jero98772/curapeces 
+** hasta convertirse en 
+*** https://github.com/jero98772/wwwofish 
+** y de hay implementarlo a 
+*** https://github.com/jero98772/webpage 
+** en su continua evolucion
+* version hello word con calculadoras
+** release:bobo
+#+begin_src python
+def suma(a,b):
+    return a+b
+def resta(a,b):
+    return a-b
+def mult(a,b):
+    return a*b
+def divR(a,b):
+    return a/b
+def divN(a,b):
+    return a//b
+def main():
+    return suma(1,1), resta(1,2), mult(2,2),divR(2,3),divN(3,545)
+return main()
+#+end_src
+
+#+RESULTS:
+| 2 | -1 | 4 | 0.6666666666666666 | 0 |
+
+*** RESULTS:
+  | 2 | -1 | 4 | 0.6666666666666666 | 1 |
+* version calculadora para personas arrogantes
+** release:bobo que cree que es inteligete pero solo un arrogante 
+#+begin_src python
+#si te vas a poner a crear una calculadora asi en poo , no es muy util y muy eficiente crear un objeto por cada cosa a calcular
+class calcular():
+    def __init__(self,a,b):
+        self.a = a
+        self.b = b
+    def suma(self):
+        return self.a + self.b
+    def resta(self):
+        return self.a - self.b
+    def multiplicacion(self):
+        return self.a * self.b
+    def division(self):
+        return self.a/self.b
+def main():
+    c = calcular(5,50)
+    return c.suma() ,c.resta(),c.multiplicacion(),c.division()
+return main()
+#+end_src
+*** RESULTS:
+  | 55 | -45 | 250 | 0.1 |
+* version no complejarse la vida  pero poner en peligro al mundo
+** release:inteligente y curioso pero con peresa
+#+begin_src python
+def main():
+#en python normal seria :
+#entrada=eval(input("pon el problema \n (ejemplo : 2+1-4*5**6) \n"))
+#para evitar un problema
+    try:
+        entrada = input("pon el problema \n (ejemplo : 2+1-4*5**6) \n")
+        entrada = entrada
+    except:
+        entrada = "2+1-4*5**6"
+    if not entrada:
+        entrada = "2+1-4*5**6"
+    return eval(entrada)
+return main()
+#+end_src
+** out:-62497 despues de ver el mundo arder
+* calculadora "tu eres el problema y nesesitas no complejarte la vida"
+** release: inteligente y curioso pero con peresa y sin mucho tiempo y le faltan cositas por aprender
+#+begin_src python
+#aqui no me deja importar math pero lo dejo asi
+from math import e ,pi ,sqrt ,exp ,log , cos, sin, tan, atan, asin ,acos
+def main():
+    try:
+        entrada = input("pon el problema \n (ejemplo : sin(2+1-4*5**6)+pi-e) \n")
+        entrada = entrada
+    except:
+        entrada = "sin(2+1-4*5**6)+pi-e"
+    if not entrada:
+        entrada = "sin(2+1-4*5**6)+pi-e"
+    return eval(entrada)
+return main()
+#+end_src
+* calculadora "tu eres el problema y nesesitas no complejarte la vida " en este caso te van a comlejarla vida por que eres tu eres el problema
+** release: inteligente y curioso pero con peresa y sin mucho tiempo y ya sabes cositas 
+#+begin_src python
+from math import * # no funciona aqui
+# aqui no me deja importar math pero lo dejo asi
+#import math
+def main():
+    try:
+        entrada = input("pon el problema \n (ejemplo : 2+1-4*5**6 \n")
+        entrada = entrada
+    except:
+        entrada = "2+1-4*5**6"
+    if not entrada:
+        entrada = "2+1-4*5**6"
+    return eval(entrada)
+return main()
+#+end_src
+* calculadora "¿pa que estudia? consiga trabajo bago y pare de publicar sus ideas que con eso gana plata" y "eres el segundo mark zucaritas"
+**  release: ni el peresas ni bobo pongase a trabajar y no joda mas
+#+begin_src python
+class caculadora:
+    def __init__(self,expresion):
+        self.expresion = expresion
+    def calcular(self):
+        entrada=eval(self.expresion)
+        return entrada
+def main():
+    try:
+        entrada = input("pon el problema \n (ejemplo : (2+1-4*5**6) ) \n")
+        entrada = entrada
+    except:
+        entrada = "(2+1-4*5**6)"
+    if not entrada:
+        entrada = "(2+1-4*5**6)"
+    calculadora = caculadora(entrada)
+    r = calculadora.calcular()
+    return r
+return main()
+#+end_src
+** out: -62497
+* calculadora "¿pa que estudia? consiga trabajo bago y pare de publicar sus ideas que con eso gana plata"
+**  release: ni el peresas ni bobo pongase a trabajar y no joda
+#+begin_src python
+#from math import * # no funciona aqui por eso declaro e y pi en el codigo
+# aqui no me deja importar math pero lo dejo asi
+class caculadora:
+    def __init__(self,expresion):
+        self.expresion = expresion
+    def calcular(self):
+        e = 2.71828
+        pi = 3.14159265359
+        entrada=eval(self.expresion)
+        return entrada
+def main():
+    try:
+        entrada = input("pon el problema \n (ejemplo : (2+1-4*5**6)+pi-e) \n")
+        entrada = entrada
+    except:
+        entrada = "(2+1-4*5**6)+pi-e"
+    if not entrada:
+        entrada = "(2+1-4*5**6)+pi-e"
+    calculadora = caculadora(entrada)
+    r = calculadora.calcular()
+    return r
+return main()
+#+end_src
+** out: -62496.57668734641 ya eres un dios
