@@ -1,10 +1,12 @@
 # calculadora
-help my
+help my...
 
 html ... primer repo del primer "lenguaje" :-D que explore
 
 donde e ido conosiendo python ,javascript, c/c++,R y algo muy importante la funcion **eval()**
 
+mas que codigos una coleccion de calculadoras tanto de software como hardware
+ [](https://raw.githubusercontent.com/jero98772/calculadora/master/pictures/hardware_calulators.jpg)
 # como funcionan
 
 # (hay 2 tipos)potenciado a la 3
