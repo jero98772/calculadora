@@ -6,7 +6,10 @@ html ... primer repo del primer "lenguaje" :-D que explore
 donde e ido conosiendo python ,javascript, c/c++,R y algo muy importante la funcion **eval()**
 
 mas que codigos una coleccion de calculadoras tanto de software como hardware
+
 ![foto](https://github.com/jero98772/calculadora/blob/master/pictures/hardware_calulators.jpg?raw=true)
+
+
 # como funcionan
 
 # (hay 2 tipos)potenciado a la 3
