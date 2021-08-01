@@ -28,11 +28,6 @@ en las dedicadas hay funciones como operadores  y por esas funciones van pasando
 en las no dedicadas  no hay funciones que tomen el valor de un operadors si no que la operacion se trata como un string y se pasa por la funcion eval que va evaluar que sucede dentro del codigo con ese string 
 #### solo nesitara nesitara texto para evaluar  
 
-## contibuye con donaciones 
-	
-	- Bitcoin: bc1qf3eh6ssgzw2t3qyjk2gzwuskq4ctfk8375fg3r
-
-
 # notas 
 
 si no hay botones o un print con instruciones introdusca la operacion "textual" como:
